@@ -450,23 +450,24 @@ Node.js >= 18
 
 BuildFox is open source, and contributions are welcome.
 
-If you want to contribute, improve BuildFox, fix a bug, add detection rules, or work on the project from source, start by visiting the repository:
+If you want to contribute, improve BuildFox, fix a bug, add detection rules, or work on the project from source, please read the contribution guidelines first.
 
-<div align="center">
+**[Contributing Guidelines](./CONTRIBUTING.md)**
+
+You can also visit the project repository:
 
 [![GitHub](https://img.shields.io/badge/GitHub-abhi--s--aji-181717?logo=github\&logoColor=white)](https://github.com/abhi-s-aji/buildfox-cli)
 
-</div>
-
-For development, clone the repository and install its dependencies:
-
-```bash
-git clone https://github.com/abhi-s-aji/buildfox-cli.git
-cd buildfox-cli
-npm install
-```
-
 ---
+
+## Security
+
+Security issues should be reported responsibly.
+
+Please read the security policy before reporting a vulnerability.
+
+**[Security Policy](./SECURITY.md)**
+
 
 ## License
 
