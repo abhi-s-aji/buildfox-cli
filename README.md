@@ -332,7 +332,7 @@ buildfox --help
 | `--version`         | Display the installed BuildFox version            |
 | `--help`            | Display command help                              |
 
-For detailed usage, examples, and command behavior, see the **[CLI Reference](CLI.md)**.
+For detailed usage, examples, and command behavior, see the [CLI Reference](CLI.md).
 ---
 
 ## Supported Project Technologies
