@@ -125,9 +125,9 @@ It:
 ## How It Works
 
 ```text
-Project
-   │
-   ▼
+   Project
+       │
+       ▼
 ┌───────────────┐
 │    Scanner    │
 └───────┬───────┘
