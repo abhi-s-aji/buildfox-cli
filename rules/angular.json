@@ -1,0 +1,18 @@
+{
+  "id": "angular",
+  "name": "Angular",
+  "category": "frontend",
+  "minScore": 70,
+  "signals": [
+    { "type": "dependency", "target": "@angular/core", "weight": 50, "description": "@angular/core present" },
+    { "type": "dependency", "target": "@angular/cli", "weight": 35, "description": "@angular/cli present" },
+    { "type": "fileExists", "target": "angular.json", "weight": 45, "description": "angular.json present" },
+    { "type": "fileExists", "target": "src/app/app.module.ts", "weight": 30, "description": "Angular app.module.ts present" },
+    { "type": "fileExists", "target": "src/app/app.component.ts", "weight": 30, "description": "Angular app.component.ts present" },
+    { "type": "filePattern", "target": "\\.component\\.ts$", "weight": 30, "description": "Angular component TypeScript files present" },
+    { "type": "filePattern", "target": "\\.component\\.html$", "weight": 25, "description": "Angular component HTML files present" },
+    { "type": "dependency", "target": "rxjs", "weight": 15, "description": "rxjs dependency present" },
+    { "type": "dependency", "target": "@angular/router", "weight": 20, "description": "@angular/router present" },
+    { "type": "dependency", "target": "@angular/common", "weight": 20, "description": "@angular/common present" }
+  ]
+}

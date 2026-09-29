@@ -1,0 +1,1 @@
+{"name":"my-custom-tool","description":"A CLI tool for analyzing local projects.","scripts":{"build":"tsc","test":"vitest run"},"dependencies":{"express":"4.18.2"}}

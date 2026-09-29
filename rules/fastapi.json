@@ -1,0 +1,18 @@
+{
+  "id": "fastapi",
+  "name": "FastAPI",
+  "category": "backend",
+  "minScore": 70,
+  "signals": [
+    { "type": "dependency", "target": "fastapi", "weight": 50, "description": "fastapi dependency present" },
+    { "type": "fileContains", "target": "requirements.txt", "value": "fastapi", "weight": 40, "description": "fastapi in requirements.txt" },
+    { "type": "fileContains", "target": "main.py", "value": "FastAPI()", "weight": 40, "description": "FastAPI() instantiation in main.py" },
+    { "type": "fileContains", "target": "app/main.py", "value": "FastAPI()", "weight": 40, "description": "FastAPI() instantiation in app/main.py" },
+    { "type": "fileContains", "target": "app.py", "value": "FastAPI()", "weight": 40, "description": "FastAPI() instantiation in app.py" },
+    { "type": "dependency", "target": "uvicorn", "weight": 30, "description": "uvicorn ASGI server present" },
+    { "type": "dependency", "target": "pydantic", "weight": 25, "description": "pydantic dependency present" },
+    { "type": "fileContains", "target": "pyproject.toml", "value": "fastapi", "weight": 35, "description": "fastapi in pyproject.toml" },
+    { "type": "fileContains", "target": "requirements.txt", "value": "uvicorn", "weight": 25, "description": "uvicorn in requirements.txt" },
+    { "type": "dependency", "target": "sqlmodel", "weight": 20, "description": "sqlmodel dependency present" }
+  ]
+}

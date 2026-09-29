@@ -1,0 +1,10 @@
+{
+  "id": "javascript",
+  "name": "JavaScript",
+  "category": "language",
+  "minScore": 50,
+  "signals": [
+    { "type": "filePattern", "target": "\\.(js|mjs|cjs)$", "weight": 40, "description": "JavaScript source files" },
+    { "type": "fileExists", "target": "package.json", "weight": 20, "description": "Node ecosystem package" }
+  ]
+}

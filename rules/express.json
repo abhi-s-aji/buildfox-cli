@@ -1,0 +1,18 @@
+{
+  "id": "express",
+  "name": "Express",
+  "category": "backend",
+  "minScore": 70,
+  "signals": [
+    { "type": "dependency", "target": "express", "weight": 50, "description": "express dependency present" },
+    { "type": "fileContains", "target": "package.json", "value": "\"express\"", "weight": 30, "description": "express mentioned in package.json" },
+    { "type": "fileContains", "target": "src/app.ts", "value": "express()", "weight": 35, "description": "express() instantiation in src/app.ts" },
+    { "type": "fileContains", "target": "src/app.js", "value": "express()", "weight": 35, "description": "express() instantiation in src/app.js" },
+    { "type": "fileContains", "target": "src/index.ts", "value": "express()", "weight": 35, "description": "express() instantiation in src/index.ts" },
+    { "type": "fileContains", "target": "src/index.js", "value": "express()", "weight": 35, "description": "express() instantiation in src/index.js" },
+    { "type": "fileContains", "target": "app.js", "value": "express()", "weight": 35, "description": "express() instantiation in app.js" },
+    { "type": "fileContains", "target": "server.js", "value": "express()", "weight": 35, "description": "express() instantiation in server.js" },
+    { "type": "dependency", "target": "@types/express", "weight": 25, "description": "@types/express present" },
+    { "type": "dependency", "target": "cors", "weight": 15, "description": "cors middleware dependency present" }
+  ]
+}

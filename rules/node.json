@@ -1,0 +1,19 @@
+{
+  "id": "node",
+  "name": "Node.js",
+  "category": "runtime",
+  "minScore": 70,
+  "signals": [
+    { "type": "fileExists", "target": "package.json", "weight": 40, "description": "package.json manifest exists" },
+    { "type": "fileExists", "target": "package-lock.json", "weight": 25, "description": "npm lockfile exists" },
+    { "type": "fileExists", "target": "pnpm-lock.yaml", "weight": 25, "description": "pnpm lockfile exists" },
+    { "type": "fileExists", "target": "yarn.lock", "weight": 25, "description": "yarn lockfile exists" },
+    { "type": "fileExists", "target": "bun.lockb", "weight": 25, "description": "bun binary lockfile exists" },
+    { "type": "fileExists", "target": "bun.lock", "weight": 25, "description": "bun lockfile exists" },
+    { "type": "fileContains", "target": "package.json", "value": "\"scripts\"", "weight": 20, "description": "package.json has scripts field" },
+    { "type": "fileContains", "target": "package.json", "value": "\"dependencies\"", "weight": 20, "description": "package.json has dependencies" },
+    { "type": "filePattern", "target": "\\.(js|cjs|mjs)$", "weight": 15, "description": "JavaScript source files present" },
+    { "type": "fileExists", "target": ".nvmrc", "weight": 15, "description": ".nvmrc file present" },
+    { "type": "negative", "target": "requirements.txt", "weight": 20, "description": "Python project indicator" }
+  ]
+}

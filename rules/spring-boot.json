@@ -1,0 +1,18 @@
+{
+  "id": "spring-boot",
+  "name": "Spring Boot",
+  "category": "backend",
+  "minScore": 70,
+  "signals": [
+    { "type": "fileContains", "target": "pom.xml", "value": "spring-boot", "weight": 50, "description": "spring-boot in pom.xml" },
+    { "type": "fileContains", "target": "build.gradle", "value": "spring-boot", "weight": 50, "description": "spring-boot in build.gradle" },
+    { "type": "fileContains", "target": "build.gradle.kts", "value": "spring-boot", "weight": 50, "description": "spring-boot in build.gradle.kts" },
+    { "type": "fileExists", "target": "src/main/resources/application.properties", "weight": 30, "description": "application.properties present" },
+    { "type": "fileExists", "target": "src/main/resources/application.yml", "weight": 30, "description": "application.yml present" },
+    { "type": "fileExists", "target": "src/main/resources/application.yaml", "weight": 30, "description": "application.yaml present" },
+    { "type": "fileExists", "target": "pom.xml", "weight": 20, "description": "pom.xml Maven configuration present" },
+    { "type": "fileExists", "target": "mvnw", "weight": 15, "description": "Maven wrapper present" },
+    { "type": "filePattern", "target": "\\.(java|kt)$", "weight": 15, "description": "Java/Kotlin source files present" },
+    { "type": "negative", "target": "app/src/main/AndroidManifest.xml", "weight": 40, "description": "Android manifest present (prevents Android false positive)" }
+  ]
+}

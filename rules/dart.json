@@ -1,0 +1,10 @@
+{
+  "id": "dart",
+  "name": "Dart",
+  "category": "language",
+  "minScore": 50,
+  "signals": [
+    { "type": "filePattern", "target": "\\.dart$", "weight": 60, "description": "Dart source files" },
+    { "type": "fileExists", "target": "pubspec.yaml", "weight": 40, "description": "Dart package configuration" }
+  ]
+}

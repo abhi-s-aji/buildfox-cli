@@ -1,0 +1,4 @@
+name: flut_proj
+dependencies:
+  flutter:
+    sdk: flutter

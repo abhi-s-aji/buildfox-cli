@@ -1,0 +1,18 @@
+{
+  "id": "next",
+  "name": "Next.js",
+  "category": "frontend",
+  "minScore": 70,
+  "signals": [
+    { "type": "dependency", "target": "next", "weight": 50, "description": "next dependency present" },
+    { "type": "fileExists", "target": "next.config.js", "weight": 35, "description": "next.config.js present" },
+    { "type": "fileExists", "target": "next.config.mjs", "weight": 35, "description": "next.config.mjs present" },
+    { "type": "fileExists", "target": "next.config.ts", "weight": 35, "description": "next.config.ts present" },
+    { "type": "dirExists", "target": "app", "weight": 25, "description": "App Router directory present" },
+    { "type": "dirExists", "target": "src/app", "weight": 25, "description": "src/app directory present" },
+    { "type": "dirExists", "target": "pages", "weight": 20, "description": "Pages Router directory present" },
+    { "type": "dirExists", "target": "src/pages", "weight": 20, "description": "src/pages directory present" },
+    { "type": "fileExists", "target": "app/layout.tsx", "weight": 30, "description": "App Router layout present" },
+    { "type": "fileExists", "target": "src/app/layout.tsx", "weight": 30, "description": "src/app layout present" }
+  ]
+}

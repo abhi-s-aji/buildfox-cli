@@ -1,0 +1,18 @@
+{
+  "id": "react",
+  "name": "React",
+  "category": "frontend",
+  "minScore": 70,
+  "signals": [
+    { "type": "dependency", "target": "react", "weight": 45, "description": "react dependency found" },
+    { "type": "dependency", "target": "react-dom", "weight": 30, "description": "react-dom dependency found" },
+    { "type": "dependency", "target": "@types/react", "weight": 20, "description": "@types/react devDependency found" },
+    { "type": "filePattern", "target": "\\.(jsx|tsx)$", "weight": 25, "description": "JSX/TSX component files present" },
+    { "type": "fileExists", "target": "src/App.tsx", "weight": 20, "description": "src/App.tsx component present" },
+    { "type": "fileExists", "target": "src/App.jsx", "weight": 20, "description": "src/App.jsx component present" },
+    { "type": "fileExists", "target": "src/main.tsx", "weight": 20, "description": "src/main.tsx entrypoint present" },
+    { "type": "fileExists", "target": "src/index.tsx", "weight": 20, "description": "src/index.tsx entrypoint present" },
+    { "type": "fileContains", "target": "package.json", "value": "\"react\"", "weight": 20, "description": "react mentioned in package.json" },
+    { "type": "dependency", "target": "react-scripts", "weight": 25, "description": "create-react-app scripts present" }
+  ]
+}

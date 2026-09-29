@@ -1,0 +1,18 @@
+{
+  "id": "python",
+  "name": "Python",
+  "category": "language",
+  "minScore": 70,
+  "signals": [
+    { "type": "fileExists", "target": "requirements.txt", "weight": 40, "description": "requirements.txt present" },
+    { "type": "fileExists", "target": "pyproject.toml", "weight": 45, "description": "pyproject.toml present" },
+    { "type": "fileExists", "target": "Pipfile", "weight": 40, "description": "Pipfile present" },
+    { "type": "fileExists", "target": "setup.py", "weight": 40, "description": "setup.py present" },
+    { "type": "filePattern", "target": "\\.py$", "weight": 35, "description": "Python source files present" },
+    { "type": "fileExists", "target": "main.py", "weight": 25, "description": "main.py present" },
+    { "type": "fileExists", "target": "app.py", "weight": 25, "description": "app.py present" },
+    { "type": "dirExists", "target": "__pycache__", "weight": 20, "description": "__pycache__ directory present" },
+    { "type": "fileExists", "target": ".python-version", "weight": 25, "description": ".python-version present" },
+    { "type": "fileExists", "target": "poetry.lock", "weight": 35, "description": "poetry.lock present" }
+  ]
+}

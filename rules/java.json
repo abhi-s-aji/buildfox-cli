@@ -1,0 +1,11 @@
+{
+  "id": "java",
+  "name": "Java",
+  "category": "language",
+  "minScore": 50,
+  "signals": [
+    { "type": "filePattern", "target": "\\.java$", "weight": 50, "description": "Java source files" },
+    { "type": "fileExists", "target": "pom.xml", "weight": 30, "description": "Maven configuration" },
+    { "type": "fileExists", "target": "build.gradle", "weight": 20, "description": "Gradle configuration" }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "flask",
+  "name": "Flask",
+  "category": "backend",
+  "minScore": 70,
+  "signals": [
+    { "type": "dependency", "target": "flask", "weight": 50, "description": "Flask dependency present" },
+    { "type": "fileContains", "target": "requirements.txt", "value": "Flask", "weight": 40, "description": "Flask in requirements.txt" },
+    { "type": "fileContains", "target": "app.py", "value": "Flask(__name__)", "weight": 40, "description": "Flask(__name__) instantiation in app.py" },
+    { "type": "fileContains", "target": "main.py", "value": "Flask(__name__)", "weight": 40, "description": "Flask(__name__) instantiation in main.py" },
+    { "type": "dependency", "target": "flask-sqlalchemy", "weight": 25, "description": "flask-sqlalchemy present" },
+    { "type": "dependency", "target": "flask-cors", "weight": 20, "description": "flask-cors present" },
+    { "type": "dependency", "target": "gunicorn", "weight": 15, "description": "gunicorn server present" },
+    { "type": "dirExists", "target": "templates", "weight": 15, "description": "Flask templates directory present" },
+    { "type": "dirExists", "target": "static", "weight": 15, "description": "Flask static directory present" },
+    { "type": "fileContains", "target": "pyproject.toml", "value": "flask", "weight": 35, "description": "flask in pyproject.toml" }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "go",
+  "name": "Go",
+  "category": "language",
+  "minScore": 70,
+  "signals": [
+    { "type": "fileExists", "target": "go.mod", "weight": 55, "description": "go.mod module file present" },
+    { "type": "fileExists", "target": "go.sum", "weight": 35, "description": "go.sum lockfile present" },
+    { "type": "filePattern", "target": "\\.go$", "weight": 35, "description": "Go source files present" },
+    { "type": "fileExists", "target": "main.go", "weight": 30, "description": "main.go entrypoint present" },
+    { "type": "fileContains", "target": "go.mod", "value": "module ", "weight": 40, "description": "module declaration in go.mod" },
+    { "type": "dirExists", "target": "cmd", "weight": 20, "description": "cmd directory present" },
+    { "type": "dirExists", "target": "pkg", "weight": 15, "description": "pkg directory present" },
+    { "type": "dirExists", "target": "internal", "weight": 20, "description": "internal directory present" },
+    { "type": "fileExists", "target": "Gopkg.toml", "weight": 25, "description": "legacy Gopkg.toml present" },
+    { "type": "negative", "target": "package.json", "weight": 20, "description": "Node.js project manifest present" }
+  ]
+}

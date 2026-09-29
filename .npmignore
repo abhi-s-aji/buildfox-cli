@@ -1,0 +1,30 @@
+# Development sources (compiled to dist/)
+src/
+
+# Test files and fixtures
+tests/
+
+# Development scripts
+scripts/
+
+# TypeScript config
+tsconfig.json
+
+# Development artifacts and temporary files
+*.tgz
+det.md
+fan.md
+min.md
+pro.md
+std.md
+create-fixtures.sh
+test-outputs/
+
+# Editor and OS files
+.vscode/
+.idea/
+*.DS_Store
+*.swp
+*.swo
+.env
+.env.*

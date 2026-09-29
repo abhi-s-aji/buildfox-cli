@@ -1,0 +1,10 @@
+{
+  "id": "typescript",
+  "name": "TypeScript",
+  "category": "language",
+  "minScore": 60,
+  "signals": [
+    { "type": "filePattern", "target": "\\.(ts|tsx)$", "weight": 50, "description": "TypeScript source files" },
+    { "type": "fileExists", "target": "tsconfig.json", "weight": 50, "description": "TypeScript configuration" }
+  ]
+}

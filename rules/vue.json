@@ -1,0 +1,18 @@
+{
+  "id": "vue",
+  "name": "Vue.js",
+  "category": "frontend",
+  "minScore": 70,
+  "signals": [
+    { "type": "dependency", "target": "vue", "weight": 50, "description": "vue dependency present" },
+    { "type": "filePattern", "target": "\\.vue$", "weight": 40, "description": "SFC .vue files present" },
+    { "type": "fileExists", "target": "vite.config.js", "weight": 15, "description": "vite config present" },
+    { "type": "fileExists", "target": "vite.config.ts", "weight": 15, "description": "vite config present" },
+    { "type": "fileExists", "target": "vue.config.js", "weight": 35, "description": "vue.config.js present" },
+    { "type": "fileExists", "target": "src/App.vue", "weight": 35, "description": "src/App.vue present" },
+    { "type": "dependency", "target": "@vue/cli-service", "weight": 30, "description": "vue cli service present" },
+    { "type": "dependency", "target": "vue-router", "weight": 20, "description": "vue-router present" },
+    { "type": "dependency", "target": "pinia", "weight": 20, "description": "pinia store present" },
+    { "type": "dependency", "target": "vuex", "weight": 20, "description": "vuex store present" }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "android",
+  "name": "Android",
+  "category": "runtime",
+  "minScore": 70,
+  "signals": [
+    { "type": "fileExists", "target": "app/src/main/AndroidManifest.xml", "weight": 40, "description": "Android manifest file present" },
+    { "type": "fileExists", "target": "app/build.gradle", "weight": 35, "description": "app/build.gradle present" },
+    { "type": "fileExists", "target": "app/build.gradle.kts", "weight": 35, "description": "app/build.gradle.kts present" },
+    { "type": "fileExists", "target": "build.gradle", "weight": 25, "description": "build.gradle present" },
+    { "type": "fileExists", "target": "build.gradle.kts", "weight": 25, "description": "build.gradle.kts present" },
+    { "type": "fileExists", "target": "gradlew", "weight": 20, "description": "gradlew wrapper present" },
+    { "type": "fileExists", "target": "settings.gradle", "weight": 20, "description": "settings.gradle present" },
+    { "type": "fileExists", "target": "settings.gradle.kts", "weight": 20, "description": "settings.gradle.kts present" },
+    { "type": "filePattern", "target": "\\.(kt|java)$", "weight": 20, "description": "Kotlin/Java source files present" },
+    { "type": "negative", "target": "pubspec.yaml", "weight": 55, "description": "Flutter pubspec present (prevents Flutter-Android false positive)" }
+  ]
+}

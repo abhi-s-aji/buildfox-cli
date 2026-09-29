@@ -1,0 +1,15 @@
+{
+  "id": "flutter",
+  "name": "Flutter",
+  "category": "frontend",
+  "minScore": 70,
+  "signals": [
+    { "type": "fileContains", "target": "pubspec.yaml", "value": "sdk: flutter", "weight": 70, "description": "sdk: flutter specified in pubspec.yaml" },
+    { "type": "fileContains", "target": "pubspec.yaml", "value": "flutter:", "weight": 60, "description": "flutter configuration in pubspec.yaml" },
+    { "type": "dirExists", "target": "ios", "weight": 30, "description": "ios platform folder in Flutter project" },
+    { "type": "dirExists", "target": "android", "weight": 30, "description": "android platform folder in Flutter project" },
+    { "type": "fileExists", "target": "pubspec.yaml", "weight": 10, "description": "pubspec.yaml manifest present" },
+    { "type": "fileExists", "target": "lib/main.dart", "weight": 20, "description": "lib/main.dart Flutter entry point present" },
+    { "type": "filePattern", "target": "\\.dart$", "weight": 10, "description": "Dart source files present" }
+  ]
+}

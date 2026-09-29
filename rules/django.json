@@ -1,0 +1,18 @@
+{
+  "id": "django",
+  "name": "Django",
+  "category": "backend",
+  "minScore": 70,
+  "signals": [
+    { "type": "dependency", "target": "django", "weight": 50, "description": "Django dependency in requirements/pipfile/pyproject" },
+    { "type": "fileExists", "target": "manage.py", "weight": 45, "description": "manage.py entry script present" },
+    { "type": "fileContains", "target": "manage.py", "value": "DJANGO_SETTINGS_MODULE", "weight": 40, "description": "DJANGO_SETTINGS_MODULE in manage.py" },
+    { "type": "fileExists", "target": "wsgi.py", "weight": 30, "description": "wsgi.py entry point present" },
+    { "type": "fileExists", "target": "asgi.py", "weight": 30, "description": "asgi.py entry point present" },
+    { "type": "fileContains", "target": "requirements.txt", "value": "Django", "weight": 40, "description": "Django in requirements.txt" },
+    { "type": "filePattern", "target": "urls\\.py$", "weight": 35, "description": "Django urls.py routing file present" },
+    { "type": "filePattern", "target": "models\\.py$", "weight": 30, "description": "Django models.py file present" },
+    { "type": "filePattern", "target": "views\\.py$", "weight": 30, "description": "Django views.py file present" },
+    { "type": "fileContains", "target": "pyproject.toml", "value": "django", "weight": 35, "description": "django in pyproject.toml" }
+  ]
+}

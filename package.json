@@ -1,0 +1,57 @@
+{
+  "name": "buildfox",
+  "version": "1.0.0",
+  "description": "Deterministic, privacy-first CLI that analyzes software projects and generates accurate README documentation.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "buildfox": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc && node scripts/postbuild.js",
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buildfox/buildfox-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/buildfox/buildfox-cli/issues"
+  },
+  "homepage": "https://github.com/buildfox/buildfox-cli#readme",
+  "keywords": [
+    "readme",
+    "cli",
+    "static-analysis",
+    "generator",
+    "documentation",
+    "developer-tools",
+    "buildfox"
+  ],
+  "author": "BuildFox Contributors",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "rules",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^5.0.2"
+  }
+}
+
